@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SolarGrid | Customers</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<header><a href="/" class="brand">☀ SolarGrid</a><form action="/logout" method="post"><input type="hidden" name="csrf" value="{{ session.csrf }}"><span>{{ g.user.username }} · {{ g.user.role }}</span> <button>Sign out</button></form></header>
+<main>
+{% include 'nav.html' %}
+<p class="eyebrow">IT212 · GROUP 1</p>
+{% for message in get_flashed_messages() %}<p role="status">{{ message }}</p>{% endfor %}
+{% if g.user.role in ['ADMIN','OPERATIONS'] %}<a href="/customers/new">+ Add customer</a>{% endif %}
+<h1>Your customers, in one place.</h1>
+<p class="intro">Households, schools, farms and businesses served by SolarGrid.</p>
+<section>
+<div class="section-title"><h2>Customer directory</h2><span class="badge">{{ 'Connection needs attention' if error else 'Live MySQL data' }}</span></div>
+<form method="get"><label for="q">Find a customer</label><div class="search"><input id="q" name="q" value="{{ query }}" placeholder="Customer name or phone number" maxlength="150"><button type="submit">Search</button><a href="/">Clear</a></div></form>
+{% if error %}<p role="alert" class="error">{{ error }}</p>{% else %}
+<p class="count">{{ rows|length }} customers shown · Up to 200 results</p>
+<div class="table-wrap"><table><thead><tr><th>Name</th><th>Type</th><th>Phone</th><th>Email</th><th>Status</th><th>Actions</th></tr></thead><tbody>
+{% for customer in rows %}<tr><td><strong>{{ customer.customer_name }}</strong></td><td>{{ customer.customer_type|title }}</td><td>{{ customer.phone }}</td><td>{{ customer.email or '—' }}</td><td>{{ 'Active' if customer.is_active else 'Inactive' }}</td><td>{% if g.user.role in ['ADMIN','OPERATIONS'] %}<a href="/customers/{{ customer.customer_id }}/edit">Edit</a>{% endif %} {% if g.user.role=='ADMIN' %}<a href="/customers/{{ customer.customer_id }}/delete">Delete</a>{% endif %}</td></tr>
+{% else %}<tr><td colspan="5">No customers match this search.</td></tr>{% endfor %}
+</tbody></table></div>{% endif %}
+</section><footer>SolarGrid · Customer management</footer>
+</main></body></html>

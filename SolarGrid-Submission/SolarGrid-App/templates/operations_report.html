@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% from '_table.html' import show %}{% block content %}<h1>Operations report</h1><section><h2>Technician workload</h2><p>Open installation and service assignments per technician.</p>{{ show(rows) }}</section><section><h2>Monthly receipts</h2><p>Payments received in ZMW, grouped by payment month.</p>{{ show(receipts) }}</section>{% endblock %}

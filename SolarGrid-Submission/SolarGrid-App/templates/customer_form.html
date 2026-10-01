@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% block content %}<a href="/">Back to customers</a><h1>{{ 'Edit customer' if customer_id else 'Add customer' }}</h1><section>{% if error %}<p class="error" role="alert">{{ error }}</p>{% endif %}<form method="post"><input type="hidden" name="csrf" value="{{ session.csrf }}">
+<label for="customer_name">Customer name</label><input id="customer_name" name="customer_name" value="{{ data.customer_name }}" maxlength="150" required>
+<label for="customer_type">Customer type</label><select id="customer_type" name="customer_type">{% for t in ['HOUSEHOLD','SCHOOL','FARM','BUSINESS'] %}<option value="{{ t }}" {{ 'selected' if data.customer_type==t else '' }}>{{ t|title }}</option>{% endfor %}</select>
+<label for="phone">Phone</label><input id="phone" name="phone" value="{{ data.phone }}" maxlength="30" required>
+<label for="email">Email (optional)</label><input id="email" name="email" type="email" value="{{ data.email or '' }}" maxlength="254">
+<label for="billing_address">Billing address (optional)</label><input id="billing_address" name="billing_address" value="{{ data.billing_address or '' }}" maxlength="255">
+<label><input type="checkbox" name="is_active" value="1" {{ 'checked' if data.is_active else '' }}> Active customer</label><p><button>Save customer</button> <a href="/">Cancel</a></p></form></section>{% endblock %}

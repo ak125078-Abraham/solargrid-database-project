@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="499.27559055118115" height="490" preserveAspectRatio="xMinYMin meet" viewBox="0 0 499 490" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="499.27559055118115" height="490"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-490)" style="clip-path: url(#clip)">
+		<g transform=" matrix(0.960145,0,0,0.960145,0,0)">
+			<rect x="0" y="405" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="456" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="6" y="462" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,924) scale(1,-1)">INSTALLATIONS</text>
+			<text x="6" y="444" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,888) scale(1,-1)">PK installation_id</text>
+			<text x="6" y="434" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,868) scale(1,-1)">site_id, status</text>
+			<rect x="177" y="405" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="177" y="456" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="183" y="462" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,924) scale(1,-1)">SERVICE_REQUESTS</text>
+			<text x="183" y="444" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,888) scale(1,-1)">PK service_request_id; FK job_id*</text>
+			<text x="183" y="434" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,868) scale(1,-1)">priority, status, resolved_at</text>
+			<rect x="354" y="405" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="354" y="456" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="360" y="462" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,924) scale(1,-1)">SERVICE_REQUEST_TECHNICIANS</text>
+			<text x="360" y="444" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,888) scale(1,-1)">PK/FK request_id*, technician_id</text>
+			<text x="360" y="434" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,868) scale(1,-1)">assigned_at</text>
+			<rect x="177" y="295" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="177" y="346" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="183" y="352" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,704) scale(1,-1)">MAINTENANCE_RECORDS</text>
+			<text x="183" y="334" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,668) scale(1,-1)">PK maintenance_record_id</text>
+			<text x="183" y="324" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,648) scale(1,-1)">FK (request_id*, technician_id)</text>
+			<text x="183" y="314" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,628) scale(1,-1)">work_done, maintenance_cost</text>
+			<rect x="354" y="295" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="354" y="346" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="360" y="352" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,704) scale(1,-1)">TECHNICIANS</text>
+			<text x="360" y="334" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,668) scale(1,-1)">PK technician_id</text>
+			<text x="360" y="324" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,648) scale(1,-1)">full_name, is_active</text>
+			<path d="M 145,440 L 177,440 Z" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="147" y="446.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,892) scale(1,-1)">1</text>
+			<text x="158" y="428.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,856) scale(1,-1)">0..*</text>
+			<path d="M 322,440 L 354,440 Z" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="324" y="446.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,892) scale(1,-1)">1</text>
+			<text x="335" y="428.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,856) scale(1,-1)">0..*</text>
+			<path d="M 426.5,365 L 426.5,405 Z" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="431" y="372" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,744) scale(1,-1)">1</text>
+			<text x="431" y="392" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,784) scale(1,-1)">0..*</text>
+			<polyline points="354 422, 338 422, 338 380, 249.5 380, 249.5 365" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8; fill: None; fill-rule: evenodd;"/>
+			<text x="339" y="387" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,774) scale(1,-1)">1</text>
+			<text x="254" y="369" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,738) scale(1,-1)">0..*</text>
+			<rect x="0" y="165" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="216" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="6" y="222" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,444) scale(1,-1)">CUSTOMERS</text>
+			<text x="6" y="204" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,408) scale(1,-1)">PK customer_id</text>
+			<text x="6" y="194" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,388) scale(1,-1)">customer_name</text>
+			<rect x="177" y="165" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="177" y="216" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="183" y="222" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,444) scale(1,-1)">INVOICES</text>
+			<text x="183" y="204" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,408) scale(1,-1)">PK invoice_id; FK customer_id</text>
+			<text x="183" y="194" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,388) scale(1,-1)">FK job_id* optional; UQ number*</text>
+			<text x="183" y="184" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,368) scale(1,-1)">issue_date, due_date, status</text>
+			<rect x="354" y="165" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="354" y="216" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="360" y="222" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,444) scale(1,-1)">INVOICE_ITEMS</text>
+			<text x="360" y="204" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,408) scale(1,-1)">PK invoice_item_id; FK invoice_id</text>
+			<text x="360" y="194" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,388) scale(1,-1)">line_number, quantity, unit_price</text>
+			<rect x="0" y="40" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="0" y="91" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="6" y="97" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,194) scale(1,-1)">APP_USERS</text>
+			<text x="6" y="79" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,158) scale(1,-1)">PK user_id; UQ username</text>
+			<text x="6" y="69" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,138) scale(1,-1)">password_hash, role</text>
+			<rect x="177" y="40" width="145" height="70" style="stroke: rgb(33%,38%,41%); stroke-linecap: butt; stroke-width: 0.7; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<rect x="177" y="91" width="145" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(91%,92%,94%); fill-rule: evenodd;"/>
+			<text x="183" y="97" style="font-family: Helvetica-Bold; font-size: 7.6px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,194) scale(1,-1)">PAYMENTS</text>
+			<text x="183" y="79" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,158) scale(1,-1)">PK payment_id; FK invoice_id</text>
+			<text x="183" y="69" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,138) scale(1,-1)">FK recorded_by; UQ receipt_number</text>
+			<text x="183" y="59" style="font-family: Helvetica; font-size: 7.3px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,118) scale(1,-1)">paid_at, amount</text>
+			<path d="M 145,200 L 177,200 Z" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="147" y="206.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,412) scale(1,-1)">1</text>
+			<text x="158" y="188.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,376) scale(1,-1)">0..*</text>
+			<path d="M 322,200 L 354,200 Z" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="324" y="206.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,412) scale(1,-1)">1</text>
+			<text x="335" y="188.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,376) scale(1,-1)">0..*</text>
+			<polyline points="249.5 165, 249.5 137.5, 249.5 137.5, 249.5 110" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8; fill: None; fill-rule: evenodd;"/>
+			<text x="253.5" y="153" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,306) scale(1,-1)">1</text>
+			<text x="253.5" y="115" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,230) scale(1,-1)">0..*</text>
+			<path d="M 145,75 L 177,75 Z" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8;"/>
+			<text x="147" y="81.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,162) scale(1,-1)">1</text>
+			<text x="158" y="63.0" style="font-family: Times-Roman; font-size: 7px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,126) scale(1,-1)">0..*</text>
+			<polyline points="72.5 405, 72.5 265, 249.5 265, 249.5 235" style="stroke: rgb(29%,34%,40%); stroke-linecap: butt; stroke-width: 0.8; fill: None; fill-rule: evenodd;"/>
+			<text x="77" y="390" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,780) scale(1,-1)">0..1</text>
+			<text x="254" y="242" style="font-family: Times-Roman; font-size: 8px;fill: rgb(0%,0%,0%); stroke:none;" transform="translate(0,484) scale(1,-1)">0..*</text>
+		</g>
+	</g>
+</svg>
