@@ -1,4 +1,14 @@
 # SolarGrid Energy Service Management System
+## Project files
+
+The complete assignment is in the [SolarGrid-Submission folder](SolarGrid-Submission/).
+
+- [Technical report](SolarGrid-Submission/SolarGrid-Technical-Report.pdf)
+- [Presentation](SolarGrid-Submission/SolarGrid-Presentation.pptx)
+- [Application source and setup](SolarGrid-Submission/SolarGrid-App/)
+- [Database schema and sample data](SolarGrid-Submission/SolarGrid-MySQL/)
+- [Views, procedures and permissions](SolarGrid-Submission/SolarGrid-MySQL-Stage2/)
+- [Demonstration results](SolarGrid-Submission/Evidence/DEMONSTRATION-RESULTS.md)
 
 IT212 Database Management Systems, Group 1, Cavendish University Zambia.
 Lecturer: Mrs Memory Mumbi Lumbwe. Deadline: 12 October 2026.
@@ -15,7 +25,7 @@ Lecturer: Mrs Memory Mumbi Lumbwe. Deadline: 12 October 2026.
 
 The technical report includes the ERD, complete relational schema, normalization, Harvard references and evidence. SolarGrid-Normalization.md provides additional worked normalization detail. SQL scripts implement 15 tables, two views and two procedures. The Flask source is in SolarGrid-App. The dated backup is supplied separately for controlled submission because it includes application password hashes.
 
-This folder is prepared for repository upload; it has not been published to GitHub. Do not upload the old starter ZIP files or a Python virtual environment. Recordings must be added or linked by the group after reviewing them; they are not bundled here.
+Do not upload the old starter ZIP files or a Python virtual environment. Recordings must be added or linked by the group after reviewing them; they are not bundled here.
 
 ## Fresh installation on a separate machine
 
